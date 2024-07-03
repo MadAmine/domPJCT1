@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+}
+.cart {
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+.cart-item .info {
+    flex: 1;
+    margin-left: 10px;
+}
+.cart-item .info h4 {
+    margin: 0;
+}
+.cart-item .quantity-control {
+    display: flex;
+    align-items: center;
+}
+.cart-item .quantity-control button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.cart-item .quantity-control span {
+    margin: 0 10px;
+}
+.cart-item .actions button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.cart-item .actions .heart {
+    background-color: transparent;
+    color: #ccc;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.cart-item .actions .heart.liked {
+    color: red;
+}
+.total-price {
+    text-align: right;
+    font-size: 18px;
+    margin-top: 20px;
+}
